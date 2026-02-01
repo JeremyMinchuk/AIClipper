@@ -1,0 +1,33 @@
+# AI Video Editor - Requirements
+# Install with: pip install -r requirements.txt
+
+# IMPORTANT: Install in this order to avoid conflicts
+# First uninstall conflicting packages:
+#   pip uninstall numpy opencv-python opencv-python-headless -y
+# Then install fresh:
+#   pip install -r requirements.txt
+
+# Core - Use specific compatible versions
+numpy==1.24.3
+opencv-python==4.8.0.74
+
+# Video Processing
+moviepy==1.0.3
+ffmpeg-python==0.2.0
+
+# Audio Transcription
+openai-whisper
+torch
+torchaudio
+
+# Ollama Integration (using requests instead of ollama package for stability)
+requests>=2.28.0
+
+# UI Framework - Use stable version
+gradio==4.19.2
+
+# Image Processing
+Pillow>=10.0.0
+
+# Utilities
+tqdm>=4.65.0
